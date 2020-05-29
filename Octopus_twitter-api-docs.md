@@ -1,4 +1,4 @@
-## Octopus media APIs how-to 
+## :octopus: Octopus media APIs how-to 
 
 [Octopus official docs](https://de.tech.nyt.net/octopus/gettingstarted/)
 
@@ -348,6 +348,9 @@ Branch 'clee_pullreqbranch' set up to track remote branch 'clee_pullreqbranch' f
 ```
 
 Click into the dev branch you created on Octopus github repo UI, then click on the pull request button:
+
+_Refer to this pull request link submitted on May 29 - https://github.com/nytimes/de-octopus/pull/138_
+
 ![[Screen Shot 2020-05-26 at 2.45.11 PM.png]]
 
 Submit the pull request:
