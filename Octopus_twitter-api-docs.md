@@ -1,4 +1,4 @@
-## Octopus how-to repo
+## Octopus media APIs how-to 
 
 [Octopus official docs](https://de.tech.nyt.net/octopus/gettingstarted/)
 
@@ -119,6 +119,8 @@ function found for type BOOLEAN, so returning raw value
 HAIL_HYDRA
 
 ```
+
+---
 
 - After validating changes locally, we are ready to push changes to a dev branch (name of our choice) to prepare for a pull request to the Octopus master branch: 
 
@@ -295,7 +297,8 @@ Branch 'clee_pullreqbranch' set up to track remote branch 'clee_pullreqbranch' f
 
 ```
 
-Submitting a pull request that branches off of master branch:
+Preparing for a pull request submission that branches off of the Octopus master branch:
+
 ```bash
 A9627:configs 211493$ git status
 On branch twitter-clee-may
@@ -345,14 +348,16 @@ Branch 'clee_pullreqbranch' set up to track remote branch 'clee_pullreqbranch' f
 ```
 
 Click into the dev branch you created on Octopus github repo UI, then click on the pull request button:
-https://github.com/nytimes/de-octopus/pull/138
-
-
 ![[Screen Shot 2020-05-26 at 2.45.11 PM.png]]
 
 Submit the pull request:
 ![[Screen Shot 2020-05-26 at 2.45.29 PM.png]]
 
+Pull request reviewed by DE team and ready to be merged:
+![[Screen Shot 2020-05-29 at 3.42.14 PM.png]]
+
+Success! 
+![Alt Text](https://media.giphy.com/media/lkimmsqhuBjcwXUC4/giphy.gif)
 
 ---
 
