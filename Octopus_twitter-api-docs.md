@@ -21,7 +21,7 @@ Steps in updating Octopus Twitter API:
 
 - testing API change locally with Octopus via shell command by using a destination test_table to see if changes come through properly:
 
-Temporary rename the table name which contains the changes so we can validate the modified data in a test table destination on BigQuery. In this Twitter API case, we will change the table name `table_name: {{ entity }}_metric` to `table_name: {{ entity }}_metric_Xtine0526test`
+Temporarily rename the table name which contains the API changes so we can validate the modified data in a test table destination on BigQuery. In this Twitter API case, we will change the table name `table_name: {{ entity }}_metric` to `table_name: {{ entity }}_metric_Xtine0526test`. 
 
 ```
 {% macro bq_stats_write(entity) %}
@@ -72,7 +72,7 @@ Temporary rename the table name which contains the changes so we can validate th
 ```
 
 
-- If changes to the Octopus pipeline is successful, the below `./octopus.sh` shell command should return a `Hail Hydra` message:
+- If changes to the Octopus pipeline are successful, the below `./octopus.sh` shell command should return a `Hail Hydra` message in both steps below. 
 
 a. For Twitter ads API, first process twitter_marketing_extract.txt: 
 ```bash
@@ -84,7 +84,7 @@ b. then run twitter_marketing_load.txt:
 A9627:de-octopus 211493$ ./octopus.sh --config_path=configs/twitter_marketing_load.txt --global_params start_time=2019-12-09 end_time=2019-12-10 partition_key=20191209          
 ```
 
-Octopus response successful:
+Octopus response message means the updates were successful:
 ```bash
 020-05-26 18:01:33,348 | task.bq_write.BQWriteTask | No conversion function found for type TIMESTAMP, so returning raw value
 2020-05-26 18:01:33,348 | task.bq_write.BQWriteTask | No conversion function found for type BOOLEAN, so returning raw value
